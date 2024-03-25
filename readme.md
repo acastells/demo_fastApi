@@ -1,8 +1,10 @@
-# Usage
+# CRUD FastApi demo
+
+## Usage
 
 docker compose up
 
-# CRUD Usage
+## CRUD Usage
 
 Once container is app, go to:
 

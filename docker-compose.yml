@@ -1,16 +1,5 @@
 services:
-    postgres:
-        image: "postgres:latest"
-        ports:
-            - "5432:5432"
-        environment:
-            - POSTGRES_PASSWORD=postgres
-
     api:
-        build: .
-        volumes:
-            - .:/api
         ports:
             - "8000:8000"
-        depends_on:
-            - postgres
+        build: .

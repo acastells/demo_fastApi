@@ -12,7 +12,6 @@ clients = {}
 app = FastAPI()
 
 
-@app.get("/", response_model=list[Client])
 @app.get("/client", response_model=list[Client])
 async def get_clients():
     return list(clients.values())
